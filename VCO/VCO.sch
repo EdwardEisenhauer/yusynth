@@ -188,7 +188,7 @@ U 1 1 5F9D743C
 P 5700 1850
 F 0 "U5" H 5750 1750 50  0000 L CNN
 F 1 "LM311" H 5800 1950 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 5700 1850 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5700 1850 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm311.pdf" H 5700 1850 50  0001 C CNN
 	1    5700 1850
 	-1   0    0    1   
@@ -313,7 +313,7 @@ U 1 1 5F9B7662
 P 6800 3850
 F 0 "U6" H 6750 3800 50  0000 C CNN
 F 1 "TL074" H 6750 3900 50  0000 C CNN
-F 2 "" H 6750 3950 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6750 3950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6850 4050 50  0001 C CNN
 	1    6800 3850
 	1    0    0    1   
@@ -372,7 +372,7 @@ U 2 1 5F9D1F9E
 P 5350 3750
 F 0 "U6" H 5300 3700 50  0000 C CNN
 F 1 "TL074" H 5300 3800 50  0000 C CNN
-F 2 "" H 5300 3850 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 5300 3850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5400 3950 50  0001 C CNN
 	2    5350 3750
 	1    0    0    1   
@@ -413,7 +413,7 @@ U 1 1 5F9F994C
 P 6200 4950
 F 0 "T3" V 6085 4950 50  0000 C CNN
 F 1 "10k" V 5994 4950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6200 4950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 6200 4950 50  0001 C CNN
 F 3 "~" H 6200 4950 50  0001 C CNN
 	1    6200 4950
 	0    -1   -1   0   
@@ -503,7 +503,7 @@ U 1 1 5F9E140C
 P 550 3650
 F 0 "J1" H 468 3225 50  0000 C CNN
 F 1 "Conn_01x05" H 468 3316 50  0000 C CNN
-F 2 "Connector_PinSocket_1.27mm:PinSocket_1x05_P1.27mm_Vertical" H 550 3650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 550 3650 50  0001 C CNN
 F 3 "~" H 550 3650 50  0001 C CNN
 	1    550  3650
 	-1   0    0    1   
@@ -560,7 +560,7 @@ U 1 1 5FA3382A
 P 1550 4600
 F 0 "T1" V 1435 4600 50  0000 C CNN
 F 1 "220k" V 1344 4600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1550 4600 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 1550 4600 50  0001 C CNN
 F 3 "~" H 1550 4600 50  0001 C CNN
 	1    1550 4600
 	0    -1   -1   0   
@@ -621,7 +621,7 @@ U 1 1 5F9CE790
 P 2050 3500
 F 0 "U3" H 2100 3350 50  0000 C CNN
 F 1 "OPA2134" H 2050 3500 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 2050 3500 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2050 3500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 2050 3500 50  0001 C CNN
 	1    2050 3500
 	1    0    0    1   
@@ -669,7 +669,7 @@ U 1 1 5F9CAADB
 P 2300 2950
 F 0 "T2" V 2400 2950 50  0000 C CNN
 F 1 "25k" V 2200 2950 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" V 2230 2950 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" V 2230 2950 50  0001 C CNN
 F 3 "~" H 2300 2950 50  0001 C CNN
 	1    2300 2950
 	0    1    -1   0   
@@ -722,7 +722,7 @@ U 2 1 5F9D97C0
 P 2500 5350
 F 0 "U3" H 2550 5200 50  0000 C CNN
 F 1 "OPA2134" H 2500 5350 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W10.16mm" H 2500 5350 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2500 5350 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 2500 5350 50  0001 C CNN
 	2    2500 5350
 	1    0    0    1   
@@ -941,7 +941,7 @@ U 1 1 5FB1DEAA
 P 3250 2600
 F 0 "C8" V 3400 2650 50  0000 R CNN
 F 1 "220pF 1%" V 3100 2700 50  0000 R CNN
-F 2 "Capacitor_THT:C_Disc_D4.7mm_W2.5mm_P5.00mm" H 3288 2450 50  0001 C CNN
+F 2 "Capacitor_THT:C_Axial_L5.1mm_D3.1mm_P10.00mm_Horizontal" H 3288 2450 50  0001 C CNN
 F 3 "~" H 3250 2600 50  0001 C CNN
 	1    3250 2600
 	-1   0    0    1   
@@ -1194,7 +1194,7 @@ U 1 1 5FA29050
 P 9100 1800
 F 0 "T4" V 8985 1800 50  0000 C CNN
 F 1 "47k" V 8894 1800 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9100 1800 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3266Y_Vertical" H 9100 1800 50  0001 C CNN
 F 3 "~" H 9100 1800 50  0001 C CNN
 	1    9100 1800
 	0    1    1    0   
@@ -1454,7 +1454,7 @@ U 4 1 5FACC6BD
 P 11850 4550
 F 0 "U6" H 11800 4500 50  0000 C CNN
 F 1 "TL074" H 11800 4600 50  0000 C CNN
-F 2 "" H 11800 4650 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 11800 4650 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 11900 4750 50  0001 C CNN
 	4    11850 4550
 	1    0    0    1   
@@ -1521,7 +1521,7 @@ U 3 1 5FAFEA79
 P 8500 5000
 F 0 "U6" H 8450 4950 50  0000 C CNN
 F 1 "TL074" H 8450 5050 50  0000 C CNN
-F 2 "" H 8450 5100 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 8450 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8550 5200 50  0001 C CNN
 	3    8500 5000
 	1    0    0    1   
@@ -1635,7 +1635,7 @@ U 3 1 5F9D3F64
 P 10550 9700
 F 0 "U3" H 10508 9746 50  0000 L CNN
 F 1 "OPA2134" H 10508 9655 50  0000 L CNN
-F 2 "" H 10550 9700 50  0001 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 10550 9700 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa134.pdf" H 10550 9700 50  0001 C CNN
 	3    10550 9700
 	1    0    0    -1  
