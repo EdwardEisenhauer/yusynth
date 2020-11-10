@@ -7,7 +7,7 @@ Sheet 1 1
 Title "VCO – yusynth.net"
 Date "2020-10-30"
 Rev ""
-Comp "Sergiusz Warga"
+Comp "Amadeusz Świerk, Sergiusz Warga"
 Comment1 "Based on Yves Usson design"
 Comment2 ""
 Comment3 ""
@@ -1337,8 +1337,6 @@ F 3 "~" H 14050 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	13900 4100 13100 4100
-Wire Wire Line
-	14200 4100 14800 4100
 $Comp
 L Device:R R40
 U 1 1 5FAC270E
@@ -1350,10 +1348,6 @@ F 3 "~" H 14050 4400 50  0001 C CNN
 	1    14050 4400
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	14800 4200 14800 4400
-Wire Wire Line
-	14800 4400 14200 4400
 $Comp
 L Amplifier_Operational:TL074 U6
 U 4 1 5FACC6BD
@@ -1783,7 +1777,7 @@ U 1 1 5FB00314
 P 4450 5050
 F 0 "U4" H 4400 4900 50  0000 L CNN
 F 1 "LM394CN" H 4800 5350 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-78-6" H 4650 4975 50  0001 L CIN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 4650 4975 50  0001 L CIN
 F 3 "http://www.elenota.pl/datasheet_download/93431/MAT02" H 4450 5050 50  0001 L CNN
 	1    4450 5050
 	1    0    0    -1  
@@ -1794,7 +1788,7 @@ U 2 1 5FB0250C
 P 4850 5050
 F 0 "U4" H 4750 4900 50  0000 L CNN
 F 1 "LM394CN" H 4550 4800 50  0001 L CNN
-F 2 "Package_TO_SOT_THT:TO-78-6" H 5050 4975 50  0001 L CIN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5050 4975 50  0001 L CIN
 F 3 "http://www.elenota.pl/datasheet_download/93431/MAT02" H 4850 5050 50  0001 L CNN
 	2    4850 5050
 	-1   0    0    -1  
@@ -1852,7 +1846,7 @@ U 1 1 5FDDC4DA
 P 3950 5250
 F 0 "R12" H 4000 5250 50  0000 L CNN
 F 1 "1k NTC tempco" V 3850 5000 50  0000 L CNN
-F 2 "" H 3950 5250 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" H 3950 5250 50  0001 C CNN
 F 3 "~" H 3950 5250 50  0001 C CNN
 	1    3950 5250
 	1    0    0    -1  
@@ -1917,16 +1911,12 @@ F 3 "" H 14800 3800 50  0001 C CNN
 	1    14800 3800
 	0    1    1    0   
 $EndComp
-Text Label 14800 4000 2    50   ~ 0
-TRI_OUT
 Text Label 14800 4100 2    50   ~ 0
+TRI_OUT
+Text Label 14800 4200 2    50   ~ 0
 SAW_OUT
-Text Label 14800 4400 2    50   ~ 0
+Text Label 14600 4400 2    50   ~ 0
 PULSE_OUT
-Wire Wire Line
-	14350 4000 14350 5150
-Wire Wire Line
-	14350 4000 14800 4000
 Wire Wire Line
 	14350 5450 14350 5850
 Wire Wire Line
@@ -2199,4 +2189,18 @@ Wire Wire Line
 Connection ~ 4750 3700
 Wire Wire Line
 	4750 3700 4750 3650
+Wire Wire Line
+	14800 4000 14600 4000
+Wire Wire Line
+	14600 4000 14600 4400
+Wire Wire Line
+	14600 4400 14200 4400
+Wire Wire Line
+	14800 4100 14350 4100
+Wire Wire Line
+	14350 4100 14350 5150
+Wire Wire Line
+	14200 4100 14200 4200
+Wire Wire Line
+	14200 4200 14800 4200
 $EndSCHEMATC
