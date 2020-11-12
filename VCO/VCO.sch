@@ -469,28 +469,6 @@ F 3 "~" H 2700 4900 50  0001 C CNN
 	1    2700 4900
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x05 CON1
-U 1 1 5F9E140C
-P 1550 4400
-F 0 "CON1" H 1550 3950 50  0000 C CNN
-F 1 "Modulation" H 1600 4050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 1550 4400 50  0001 C CNN
-F 3 "~" H 1550 4400 50  0001 C CNN
-	1    1550 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5F9D2CC2
-P 2700 4400
-F 0 "R5" V 2600 4350 50  0000 L CNN
-F 1 "100k 1%" V 2800 4250 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 4400 50  0001 C CNN
-F 3 "~" H 2700 4400 50  0001 C CNN
-	1    2700 4400
-	0    1    1    0   
-$EndComp
 Text Notes 2000 5250 0    50   ~ 0
 For +12V/-12V version\nR7 = 220k
 Wire Wire Line
@@ -499,8 +477,6 @@ Wire Wire Line
 	3050 3900 3050 4150
 Wire Wire Line
 	3050 4150 2850 4150
-Wire Wire Line
-	2850 4400 3050 4400
 Wire Wire Line
 	3050 4400 3050 4150
 Connection ~ 3050 4150
@@ -558,13 +534,9 @@ F 3 "" H 3200 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2550 4300 2550 4150
-Wire Wire Line
 	2550 3900 2250 3900
 Wire Wire Line
 	2250 3900 2250 4200
-Wire Wire Line
-	2550 4500 2550 4650
 $Comp
 L Amplifier_Operational:OPA2134 U3
 U 1 1 5F9CE790
@@ -1667,26 +1639,8 @@ Wire Wire Line
 Wire Wire Line
 	3250 4150 3050 4150
 Connection ~ 3250 4150
-Wire Wire Line
-	1750 4200 2250 4200
-Wire Wire Line
-	1750 4300 2550 4300
-Wire Wire Line
-	1750 4400 2550 4400
-Wire Wire Line
-	1750 4500 2550 4500
 Text Label 1750 4200 0    50   ~ 0
 EXP_FM
-Text Label 1750 4300 0    50   ~ 0
-V\OCT_IN
-Text Label 1750 4500 0    50   ~ 0
-FINE_TUNE
-Text Label 1750 4600 0    50   ~ 0
-COARSE_TUNE
-Text Label 1750 4400 0    50   ~ 0
-V\OCT_IN
-Text Label 2350 6200 0    50   ~ 0
-LINEAR_FM
 Text Label 1800 8200 0    50   ~ 0
 PWM_IN
 Text Label 1800 8300 0    50   ~ 0
@@ -1755,8 +1709,6 @@ Connection ~ 4350 4700
 Connection ~ 3050 4900
 Connection ~ 3050 4650
 Wire Wire Line
-	1750 4600 2250 4600
-Wire Wire Line
 	2250 4600 2250 4900
 Wire Wire Line
 	2250 4900 2550 4900
@@ -1811,17 +1763,6 @@ Wire Wire Line
 	5150 5150 5150 5050
 Wire Wire Line
 	5150 5050 5050 5050
-$Comp
-L Connector_Generic:Conn_01x01 CON2
-U 1 1 5FEDBC30
-P 1600 6200
-F 0 "CON2" H 1600 5950 50  0000 C CNN
-F 1 "Linear FM" H 1600 6050 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 1600 6200 50  0001 C CNN
-F 3 "~" H 1600 6200 50  0001 C CNN
-	1    1600 6200
-	-1   0    0    1   
-$EndComp
 Text Label 14800 3900 2    50   ~ 0
 SINE_OUT
 $Comp
@@ -1848,9 +1789,9 @@ Wire Wire Line
 Wire Wire Line
 	8200 2150 14800 2150
 Text Label 15100 8950 2    50   ~ 0
--15V
+-15VPS
 Text Label 15100 8750 2    50   ~ 0
-+15V
++15VPS
 Wire Wire Line
 	15100 8950 14800 8950
 Wire Wire Line
@@ -2049,17 +1990,6 @@ F 3 "~" H 12200 8550 50  0001 C CNN
 	1    12200 8550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 CON3
-U 1 1 60044F05
-P 15000 2050
-F 0 "CON3" H 15000 2200 50  0000 C CNN
-F 1 "Sync in" H 15000 1850 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 15000 2050 50  0001 C CNN
-F 3 "~" H 15000 2050 50  0001 C CNN
-	1    15000 2050
-	1    0    0    -1  
-$EndComp
 Text Label 14800 2150 2    50   ~ 0
 SOFT_SYNC_IN
 Text Label 14800 2050 2    50   ~ 0
@@ -2144,10 +2074,10 @@ F 3 "" H 13050 8350 50  0001 C CNN
 $EndComp
 Connection ~ 13050 8350
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0127
 U 1 1 5FC524B2
 P 7800 9600
-F 0 "#PWR?" H 7800 9450 50  0001 C CNN
+F 0 "#PWR0127" H 7800 9450 50  0001 C CNN
 F 1 "VCC" H 7815 9773 50  0000 C CNN
 F 2 "" H 7800 9600 50  0001 C CNN
 F 3 "" H 7800 9600 50  0001 C CNN
@@ -2156,10 +2086,10 @@ F 3 "" H 7800 9600 50  0001 C CNN
 $EndComp
 Connection ~ 7800 9600
 $Comp
-L power:+15V #PWR?
+L power:+15V #PWR0133
 U 1 1 5FC568D6
 P 8850 9600
-F 0 "#PWR?" H 8850 9450 50  0001 C CNN
+F 0 "#PWR0133" H 8850 9450 50  0001 C CNN
 F 1 "+15V" H 8865 9773 50  0000 C CNN
 F 2 "" H 8850 9600 50  0001 C CNN
 F 3 "" H 8850 9600 50  0001 C CNN
@@ -2168,10 +2098,10 @@ F 3 "" H 8850 9600 50  0001 C CNN
 $EndComp
 Connection ~ 8850 9600
 $Comp
-L power:-15V #PWR?
+L power:-15V #PWR0134
 U 1 1 5FC58F2A
 P 8850 10200
-F 0 "#PWR?" H 8850 10300 50  0001 C CNN
+F 0 "#PWR0134" H 8850 10300 50  0001 C CNN
 F 1 "-15V" H 8865 10373 50  0000 C CNN
 F 2 "" H 8850 10200 50  0001 C CNN
 F 3 "" H 8850 10200 50  0001 C CNN
@@ -2180,10 +2110,10 @@ F 3 "" H 8850 10200 50  0001 C CNN
 $EndComp
 Connection ~ 8850 10200
 $Comp
-L power:-15V #PWR?
+L power:-15V #PWR0135
 U 1 1 5FC5A851
 P 9750 10200
-F 0 "#PWR?" H 9750 10300 50  0001 C CNN
+F 0 "#PWR0135" H 9750 10300 50  0001 C CNN
 F 1 "-15V" H 9765 10373 50  0000 C CNN
 F 2 "" H 9750 10200 50  0001 C CNN
 F 3 "" H 9750 10200 50  0001 C CNN
@@ -2192,10 +2122,10 @@ F 3 "" H 9750 10200 50  0001 C CNN
 $EndComp
 Connection ~ 9750 10200
 $Comp
-L power:+15V #PWR?
+L power:+15V #PWR0136
 U 1 1 5FC5ACD1
 P 9750 9600
-F 0 "#PWR?" H 9750 9450 50  0001 C CNN
+F 0 "#PWR0136" H 9750 9450 50  0001 C CNN
 F 1 "+15V" H 9765 9773 50  0000 C CNN
 F 2 "" H 9750 9600 50  0001 C CNN
 F 3 "" H 9750 9600 50  0001 C CNN
@@ -2203,4 +2133,78 @@ F 3 "" H 9750 9600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 9750 9600
+Wire Wire Line
+	1750 4200 2250 4200
+Wire Wire Line
+	1750 4600 2250 4600
+Text Label 1750 4400 0    50   ~ 0
+V\OCT_IN2
+Text Label 1750 4600 0    50   ~ 0
+COARSE_TUNE
+Text Label 1750 4500 0    50   ~ 0
+FINE_TUNE
+Text Label 1750 4300 0    50   ~ 0
+V\OCT_IN1
+Wire Wire Line
+	1750 4500 2550 4500
+Wire Wire Line
+	1750 4400 2550 4400
+Wire Wire Line
+	1750 4300 2550 4300
+Wire Wire Line
+	2550 4500 2550 4650
+Wire Wire Line
+	2550 4300 2550 4150
+Wire Wire Line
+	2850 4400 3050 4400
+$Comp
+L Device:R R5
+U 1 1 5F9D2CC2
+P 2700 4400
+F 0 "R5" V 2600 4350 50  0000 L CNN
+F 1 "100k 1%" V 2800 4250 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 4400 50  0001 C CNN
+F 3 "~" H 2700 4400 50  0001 C CNN
+	1    2700 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 CON1
+U 1 1 5F9E140C
+P 1550 4400
+F 0 "CON1" H 1550 3950 50  0000 C CNN
+F 1 "Modulation" H 1600 4050 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 1550 4400 50  0001 C CNN
+F 3 "~" H 1550 4400 50  0001 C CNN
+	1    1550 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 CON3
+U 1 1 5FDA24F3
+P 15000 2050
+F 0 "CON3" H 15000 2400 50  0000 C CNN
+F 1 "Sync_In" H 15000 2300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 14800 1550 50  0001 C CNN
+F 3 "~" H 15000 2050 50  0001 C CNN
+	1    15000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 5FDB0DF7
+P 14800 1950
+F 0 "#PWR0138" H 14800 1700 50  0001 C CNN
+F 1 "GND" H 14805 1777 50  0000 C CNN
+F 2 "" H 14800 1950 50  0001 C CNN
+F 3 "" H 14800 1950 50  0001 C CNN
+	1    14800 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	14800 2250 14250 2250
+Text Label 14250 2250 0    50   ~ 0
+FMMOD
+Text Label 1800 6200 0    50   ~ 0
+FMMOD
 $EndSCHEMATC
